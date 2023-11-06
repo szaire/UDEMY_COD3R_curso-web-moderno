@@ -1,4 +1,4 @@
 608: métodos do app "use" e "all" são utilizados com requisições genéricas
 
-609: a ordem de declração dos métodos importa pois o express trabalha com
+609: a ordem de declaração dos métodos importa pois o express trabalha com
 o conceito de chain of responsability (uso da função next)
