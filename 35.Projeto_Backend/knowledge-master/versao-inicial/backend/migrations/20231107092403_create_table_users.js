@@ -1,10 +1,10 @@
 exports.up = function (knex, Promise) {
-	return knex.schema.createTable('users', (table) => {
-		table.increment('id').primary();
-		table.string('name').noNull();
-		table.string('email').noNull().unique();
-		table.string('password').noNull();
-		table.string('admin').noNull().defaultTo(false);
+	return knex.schema.creteTable('users', (table) => {
+		table.increments('id').primary();
+		table.string('name').notNull();
+		table.string('email').notNull().unique();
+		table.string('password').notNull();
+		table.string('admin').notNull().defaultTo(false);
 	});
 };
 

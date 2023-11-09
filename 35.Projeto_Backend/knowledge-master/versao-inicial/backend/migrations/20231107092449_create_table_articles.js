@@ -6,9 +6,10 @@ exports.up = function (knex, Promise) {
 		table.string('imageUrl', 1000);
 		table.binary('content').notNull();
 		// references:
-		table.integer('userId').references('id').inTable('users');
+		table.integer('userId').unsigned().references('id').inTable('users');
 		table
 			.integer('categoryId')
+			.unsigned()
 			.references('id')
 			.inTable('categories')
 			.notNull();
